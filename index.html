@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Desertron
+    </title>
+  </head>
+  <body>
+    <audio controls src="http://localhost:8000/scsynth"></audio>
+    <!-- <audio id="audioplayer" preload controls loop style="width:500px;"> -->
+    <!--   <source src="audio.mp3"> -->
+    <!--   <source src="audio.caf"> -->
+    <!-- </audio> -->
+    <!-- <script type="text/javascript"> -->
+    <!--   var audioTag = document.createElement('audio'); -->
+    <!--   if (!(!!(audioTag.canPlayType) && ("no" != audioTag.canPlayType("audio/mpeg")) && ("" != audioTag.canPlayType("audio/mpeg")))) { -->
+    <!--   AudioPlayer.embed("audioplayer", {soundFile: "audio.mp3"}); -->
+    <!--   } -->
+    <!-- </script> -->
+    <form id="code">
+      <textarea style="width:500px; height:500px; font-family: monospace;">{SinOsc.ar([440,440])}.play;</textarea>
+      <input type="submit">
+    </form>
+  </body>
+</html>
+
